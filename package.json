@@ -13,7 +13,6 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "bunyan": "^1.8.12",
-    "mongodb": "^3.0.0-rc0",
     "mongoose": "^4.13.7",
     "restify": "^6.3.4"
   }

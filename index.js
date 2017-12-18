@@ -4,7 +4,7 @@
  * Module Dependencies
  */
 const restify = require('restify'),
-    //mongodb = require('mongodb').MongoClient,
+    
     mongoose = require('mongoose'),
     config = require('./common/config'),
     dbConnection = require('./common/db-connection'),
@@ -13,6 +13,8 @@ const restify = require('restify'),
 /**
  * Initialize Server
  */
+
+ 
 const server = restify.createServer({
     name: config.app.name,
     version: config.app.version

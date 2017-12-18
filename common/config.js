@@ -7,7 +7,7 @@ let LOG_LEVEL = process.env.LOG_LEVEL || 'info';
 
 
 let APP_NAME = 'node-restify-mongodb-node-restify-';
-let DB_NAME = "todos_" + NODE_ENV;
+let DB_NAME = "todos_";
 
 const APP_VERSION = "1.0.0"
 let config = {
@@ -23,7 +23,7 @@ let config = {
         db: {
             host: MONGO_HOST,
             port: MONGO_PORT,
-            name: DB_NAME
+            name: DB_NAME + NODE_ENV,
         },
         log: {
             name: APP_NAME + NODE_ENV,
@@ -41,7 +41,7 @@ let config = {
         db: {
             host: MONGO_HOST,
             port: MONGO_PORT,
-            name: DB_NAME
+            name: DB_NAME + NODE_ENV,
         },
         log: {
             name: APP_NAME + NODE_ENV,
@@ -59,7 +59,7 @@ let config = {
         db: {
             host: MONGO_HOST,
             port: MONGO_PORT,
-            name: DB_NAME,
+            name: DB_NAME + NODE_ENV,
         },
         log: {
             name: APP_NAME + NODE_ENV,
